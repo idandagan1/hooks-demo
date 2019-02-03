@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Form from './components/Form';
+import Form from './components/Form.hooks';
 import { ThemeContext, themes } from './context/theme';
 import './index.css';
 

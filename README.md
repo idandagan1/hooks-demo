@@ -16,6 +16,8 @@
 4. go to localhost:3000
 ```
 
+in the index.js you can import 'Form.hooks' instead of 'Form.classes'.
+
 ## License
 
 MIT © [](https://github.com/)
