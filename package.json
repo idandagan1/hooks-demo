@@ -8,13 +8,16 @@
     "node": ">=8",
     "npm": ">=5"
   },
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "scripts": {
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "build": "rollup -c",
     "start": "react-scripts start",
     "prepare": "yarn run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist",
     "lint:fix": "./node_modules/.bin/eslint --quiet --fix --ignore-path .eslintignore ."
   },
   "peerDependencies": {
