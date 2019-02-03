@@ -1,22 +1,15 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import { render } from 'react-dom';
+import Form from './components/Form';
+import { ThemeContext, themes } from './context/theme';
+import './index.css';
 
-import styles from './styles.css'
+const App = () => (
+  <div>
+    <ThemeContext.Provider value={themes.light.green}>
+      <Form />
+    </ThemeContext.Provider>
+  </div>
+);
 
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
-
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
-}
+render(<App />, document.getElementById('root')); // eslint-disable-line

@@ -1,29 +1,19 @@
-# hooks
+# hooks-demo
 
 > playground for react hooks
 
 [![NPM](https://img.shields.io/npm/v/hooks.svg)](https://www.npmjs.com/package/hooks) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-## Install
+## Installation
 
 ```bash
-npm install --save hooks
-```
+1. git clone https://github.com/idandagan1/hooks-demo.git
 
-## Usage
+2. yarn || npm i
 
-```jsx
-import React, { Component } from 'react'
+3. npm start
 
-import MyComponent from 'hooks'
-
-class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
-}
+4. go to localhost:3000
 ```
 
 ## License
